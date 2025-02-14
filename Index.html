@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadus Dandan Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="https://example.com/glue-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="game-container">
+        <h1>💕 Hello Dandan! 💕</h1>
+        <p>Welcome to your special Valentine's game! 🥰</p>
+        <button id="start-game">Start the Game</button>
+        
+        <div id="game-step-1" class="game-step hidden">
+            <h2>💖 Solve this riddle! 💖</h2>
+            <p>What has keys but can't open locks? 🤔</p>
+            <input type="text" id="riddle-answer" placeholder="Type your answer">
+            <button id="submit-riddle">Submit</button>
+        </div>
+
+        <div id="game-step-2" class="game-step hidden">
+            <h2>🎀 Memory Game 🎀</h2>
+            <p>Match the Hello Kitty cards!</p>
+            <button id="start-memory">Play Memory Game</button>
+            <div id="memory-game" class="hidden"></div>
+        </div>
+
+        <div id="game-step-3" class="game-step hidden">
+            <h2>💘 Find the Hidden Heart! 💘</h2>
+            <p>Click on the correct object!</p>
+            <div id="heart-game">
+                <button class="fake-heart">🍩</button>
+                <button class="fake-heart">🐱</button>
+                <button id="real-heart">❤️</button>
+                <button class="fake-heart">🎀</button>
+            </div>
+        </div>
+
+        <div id="final-step" class="game-step hidden">
+            <h2>💕 I love you, Dandan! 💕</h2>
+            <p>Will you be my Valentine? 🥰</p>
+            <button id="yes-btn">Yes 💖</button>
+            <button id="no-btn">No 😢</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
